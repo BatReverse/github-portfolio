@@ -314,3 +314,25 @@ html{
 #pers_proj{
   height: auto;
 }
+#resume_div{
+  width: 50%;
+
+}
+#career_inside{
+  display: flex;
+  
+}
+
+#career_inside h3{
+  margin-bottom: 20px;
+}
+
+#career_a .timeline h3{
+  margin: 0%;
+} 
+
+#resume iframe{
+  margin: 5%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
