@@ -3,194 +3,293 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riyad Cornu — Engineering Student · ASR &amp; Embedded Systems</title>
+    <meta name="description" content="Portfolio of Riyad Cornu, engineering student in the Systems &amp; Networks Administration (ASR) track at ENSEEIHT (Toulouse INP), building low-level and embedded software projects.">
+    <meta name="color-scheme" content="light dark">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Riyad Cornu — Engineering Student · ASR &amp; Embedded Systems">
+    <meta property="og:description" content="Portfolio of Riyad Cornu, engineering student in the Systems &amp; Networks Administration (ASR) track at ENSEEIHT (Toulouse INP), building low-level and embedded software projects.">
+    <meta property="og:url" content="https://batreverse.github.io/github-portfolio/">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%2312181D'/%3E%3Ctext x='32' y='42' font-family='monospace' font-size='26' font-weight='700' fill='%23C1652E' text-anchor='middle'%3ERC%3C/text%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style/style.css">
-    <title>Riyad Cornu</title>
 </head>
 <body>
     <nav>
+        <a href="#home" class="brand" aria-label="Back to top">RC</a>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#courses">Engineering Courses</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#toolbox">Toolbox</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#career">Career</a></li>
             <li><a href="#mobility">Mobility</a></li>
-            <li><a href="#civic">Civic Engagement</a></li>
-            <li><a href="#career">Career Development</a></li>
             <li><a href="#hobbies">Hobbies</a></li>
-            <li><a href="#pers_proj">Personal Project</a></li>
         </ul>
     </nav>
 
-    <div class="container">
+    <main>
 
-        <section class="page" id="home">
-            <div id="home-left">
-                <div id="home-left-inside">
-                    <div id="name_home">CORNU Riyad</div>
-                    <div id="home_status">Computer Science Student</div>
-                </div>
-            </div>
-            
-            <div id="home-right">
-                <div id="home-right-inside">
-                    <div class="image_item">
-                        <a href="https://youtu.be/0vOfXVZGBWo">
-                            <img src="img/Youtube_logo.png" class="petite-image" alt="YouTube logo">     
-                            <p>Presentation</p>  
-                        </a>
-                    </div>         
-                    <div class="image_item">
-                        <a href="https://www.linkedin.com/in/riyad-cornu-0a9088242/">
-                            <img src="img/linkedin_logo.png" class="petite-image" alt="LinkedIn logo"> 
-                            <p>LinkedIn</p>
-                        </a>
-                    </div>    
-                    <div class="image_item">
-                        <a href="https://github.com/BatReverse">
-                            <img src="img/github-logo.png" class="petite-image" alt="GitHub logo">
-                            <p>GitHub</p>
-                        </a>                      
-                    </div>
+        <section class="hero" id="home">
+            <div class="hero-inner">
+                <p class="eyebrow">Portfolio</p>
+                <h1>Riyad Cornu</h1>
+                <p class="hero-role">Engineering student — ASR track · aiming for embedded software</p>
+                <p class="hero-pitch">
+                    Currently in year 2 of the Systems &amp; Networks Administration (ASR) track at
+                    ENSEEIHT (Toulouse INP), after a CPGE MP2I–MPI background. I like building things
+                    from the ground up — from CUDA kernels for a neural network to, soon, the networks
+                    and systems that keep infrastructure running.
+                </p>
+                <div class="cmd-row" role="list" aria-label="Contact links">
+                    <a role="listitem" href="https://youtu.be/0vOfXVZGBWo">
+                        <span class="flag">--presentation</span>
+                    </a>
+                    <a role="listitem" href="https://www.linkedin.com/in/riyad-cornu-0a9088242/">
+                        <span class="flag">--linkedin</span>
+                    </a>
+                    <a role="listitem" href="https://github.com/BatReverse">
+                        <span class="flag">--github</span>
+                    </a>
+                    <a role="listitem" href="#career">
+                        <span class="flag">--resume</span>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <section class="page" id="courses">
+        <section class="section" id="courses">
+            <p class="eyebrow">01 — Education</p>
             <h2>Engineering Courses</h2>
             <div class="timeline">
-                <div class="container_timeline left">
-                    <div class="content">
-                        <h3>Future</h3>
-                        <p>Just have to wait.</p>
+                <div class="timeline-item is-current">
+                    <div class="timeline-content">
+                        <div class="timeline-head">
+                            <h3>2nd Year of Engineering — ASR track</h3>
+                            <span class="badge badge-current">Current</span>
+                        </div>
+                        <small>Systems &amp; Networks Administration · Toulouse INP – ENSEEIHT (N7) · 2026–2027</small>
+                        <p class="timeline-note">Core curriculum:</p>
+                        <ul>
+                            <li>Networks &amp; protocols, routing</li>
+                            <li>Advanced operating systems &amp; Linux administration</li>
+                            <li>Virtualization &amp; containerization</li>
+                            <li>Systems &amp; network security</li>
+                            <li>Databases and cloud fundamentals</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="container_timeline right">
-                    <div class="content">
+                <div class="timeline-item">
+                    <div class="timeline-content">
                         <h3>1st Year of Engineering</h3>
-                        <small>Toulouse INP - ENSEEIHT (N7) • 2025–2026</small>
+                        <small>Toulouse INP – ENSEEIHT (N7) · 2025–2026</small>
                         <ul>
-                            <li>Tools and programming languages: MATLAB, Why3, Coq, Ada, and C</li>
-                            <li>Mathematics (Optimization, Probability, Statistics)</li>
+                            <li>Tools &amp; languages: C, Rust, Ada, MATLAB, Why3, Coq</li>
+                            <li>Mathematics: optimization, probability, statistics</li>
                         </ul>
                     </div>
                 </div>
-           
-                <div class="container_timeline left">
-                    <div class="content">
+                <div class="timeline-item">
+                    <div class="timeline-content">
                         <h3>CPGE MP2I–MPI</h3>
-                        <small>Mathematics, Physics, Computer Science • 2022–2025</small>
-                        <ul> 
-                            <li>2 years at Lycée Hoche (2022–2024)</li>
-                            <li>1 year at Lycée Paul Valéry – Paris 12th (2024–2025)</li>
+                        <small>Mathematics, Physics, Computer Science · 2022–2025</small>
+                        <ul>
+                            <li>2 years at Lycée Hoche, Versailles (2022–2024)</li>
+                            <li>1 year at Lycée Paul Valéry, Paris 12th (2024–2025)</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="page" id="mobility">
-            <h2>Mobility</h2>
-            <p></p>
-        </section>
+        <section class="section" id="toolbox">
+            <p class="eyebrow">02 — Skills</p>
+            <h2>Toolbox</h2>
 
-        <section class="page" id="civic">
-            <h2>Civic Engagement</h2>
-            <p></p>
-        </section>
-
-        <section class="page" id="career">
-            <h2>Career Development</h2>
-        <div id="career_inside">
-            <div id="resume_div">
-                <h3>
-                    Resume:
-                </h3>
-                <div id="resume">
-                    <iframe src="pdf/resume_en.pdf"  style=" width: 80%; height : 75vh"> </iframe>
+            <div class="tool-group">
+                <h3>Systems &amp; low-level languages</h3>
+                <div class="chip-row">
+                    <span class="chip">C</span>
+                    <span class="chip">Rust</span>
+                    <span class="chip">Ada</span>
+                    <span class="chip">CUDA</span>
                 </div>
             </div>
-            <div id="career_a">
-                <h3> Career Development projection in 2025:</h3>
-                <div class="timeline">
-                <div class="container_timeline left">
-                    <div class="content">
-                        <h3>10 years</h3>
-                        <small>Same industry higher responsability</small>
-                        <ul>
-                            <li> Project manager and lead teams to bigger projects </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="container_timeline right">
-                    <div class="content">
-                        <h3>5 years</h3>
-                        <small>First job</small>
-                        <ul>
-                            <li>2 years in the job market, 2 years as an embedded software engineer</li>
-                            <li>Hope to works in big french tech company such as Thales, Dassault, MBDA.</li>
-                        </ul>
-                    </div>
-                </div>
-           
-                <div class="container_timeline left">
-                    <div class="content">
-                        <h3>2 years far from now</h3>
-                        <small>First intership</small>
-                        <ul>
-                            <li>
-                                Hope to have my first intership at a company that make embedded software.
-                            </li>
-                        </ul>
-                    </div>
+
+            <div class="tool-group">
+                <h3>Applied &amp; scientific computing</h3>
+                <div class="chip-row">
+                    <span class="chip">Python</span>
+                    <span class="chip">MATLAB</span>
                 </div>
             </div>
-           </div>
-            <p></p>
-        </div>             
+
+            <div class="tool-group">
+                <h3>Formal methods</h3>
+                <div class="chip-row">
+                    <span class="chip">Why3</span>
+                    <span class="chip">Coq</span>
+                </div>
+            </div>
+
+            <div class="tool-group">
+                <h3>Systems &amp; networks — ASR, from 2026</h3>
+                <div class="chip-row">
+                    <span class="chip chip-upcoming">Linux administration</span>
+                    <span class="chip chip-upcoming">Networking</span>
+                    <span class="chip chip-upcoming">Virtualization</span>
+                </div>
+            </div>
+
+            <div class="tool-group">
+                <h3>Spoken languages</h3>
+                <div class="chip-row">
+                    <span class="chip">French — native</span>
+                    <span class="chip">English — operational</span>
+                </div>
+            </div>
         </section>
 
-        <section class="page" id="hobbies">
-            <h2>Hobbies</h2>
-            <p></p>
-        </section>
+        <section class="section" id="projects">
+            <p class="eyebrow">03 — Projects</p>
+            <h2>Personal Projects</h2>
 
-        <section class="page" id="pers_proj">
-            <h2>Personal Tech Project</h2>
-            <div class="projects">
-                <h3>Neural Network from Scratch (TIPE 2025)</h3>
-                <small>Create my own neural network using CUDA</small><br>
-                <p>Objectives:</p>
+            <article class="project-card">
+                <div class="project-head">
+                    <h3>Neural Network from Scratch</h3>
+                    <span class="status-badge status-done">Completed</span>
+                </div>
+                <small>TIPE 2025 · Own neural network built with CUDA</small>
+
+                <div class="stat-row">
+                    <div class="stat"><b>96%</b><span>accuracy on MNIST</span></div>
+                    <div class="stat"><b>89%</b><span>accuracy on EMNIST</span></div>
+                </div>
+
+                <p class="block-label">Objectives</p>
                 <ul>
-                    <li>Create my own neural network from scratch.</li>
-                    <li>Implement every single matrix operation by writing my own CUDA GPU kernels.</li>
-                    <li>Optimize my neural network backpropagation to use my whole CPU.</li>
-                    <li>Image recognition on MNIST (96% accuracy) and EMNIST (89% accuracy) datasets.</li>
+                    <li>Build a neural network from scratch, with no ML framework.</li>
+                    <li>Implement every matrix operation as hand-written CUDA GPU kernels.</li>
+                    <li>Optimize backpropagation to use the whole CPU as well.</li>
+                    <li>Run image recognition on the MNIST and EMNIST datasets.</li>
                 </ul>
-                <p>What I learned:</p>
+                <p class="block-label">What I learned</p>
                 <ul>
                     <li>Deep understanding of backpropagation and optimizers such as Adam.</li>
                     <li>Deep understanding of low-level memory management.</li>
-                    <li>CUDA API.</li>
+                    <li>The CUDA API.</li>
                 </ul>
-            </div>
+            </article>
 
-            <div class="projects">
-                <h3>Connect 4 Solver</h3>
-                <small>Under development</small><br>
-                <p>Objectives:</p>
+            <article class="project-card">
+                <div class="project-head">
+                    <h3>Connect 4 Solver</h3>
+                    <span class="status-badge status-progress">In progress</span>
+                </div>
+                <small>Own Connect 4 engine, written in C</small>
+
+                <p class="block-label">Objectives</p>
                 <ul>
-                    <li>Create my own Connect 4 in C.</li>
+                    <li>Build a Connect 4 game from scratch in C.</li>
                     <li>Find the best move for a given board state.</li>
                     <li>Cache previous results.</li>
-                    <li>Train my algorithm.</li>
+                    <li>Train the evaluation function.</li>
                 </ul>
-                <p>What I learned (so far):</p>
+                <p class="block-label">What I've learned so far</p>
                 <ul>
                     <li>Game theory.</li>
                     <li>Efficient hash functions.</li>
-                    <li>Monte Carlo Tree Algorithm.</li>
-                    <li>Efficient caching.</li>
+                    <li>Monte Carlo Tree Search.</li>
+                    <li>Efficient caching strategies.</li>
                 </ul>
+            </article>
+        </section>
+
+        <section class="section" id="career">
+            <p class="eyebrow">04 — Career</p>
+            <h2>Career Development</h2>
+
+            <div id="resume">
+                <h3>Résumé</h3>
+                <a class="btn-outline" href="pdf/resume_en.pdf" target="_blank" rel="noopener">Open résumé (PDF) ↗</a>
+                <iframe class="resume-frame" src="pdf/resume_en.pdf" title="Riyad Cornu's résumé"></iframe>
+            </div>
+
+            <div class="career-projection">
+                <h3>Where I see myself heading</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>+2 years</h3>
+                            <small>First internship</small>
+                            <ul>
+                                <li>First internship at a company building embedded software.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>+5 years</h3>
+                            <small>First job</small>
+                            <ul>
+                                <li>Embedded software engineer, after entering the job market.</li>
+                                <li>Aiming for a major French tech company such as Thales, Dassault, or MBDA.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>+10 years</h3>
+                            <small>Same industry, higher responsibility</small>
+                            <ul>
+                                <li>Project manager, leading teams on larger projects.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-    </div>
+
+        <section class="section" id="mobility">
+            <p class="eyebrow">05 — Mobility</p>
+            <h2>International Mobility</h2>
+            <article class="info-card">
+                <h3>Academic exchange — China</h3>
+                <small>3rd year, 9th semester</small>
+                <p>Planning an academic exchange in China during my 3rd year of engineering (semester 9). Host university and exact dates still to be confirmed.</p>
+            </article>
+        </section>
+
+        <section class="section" id="hobbies">
+            <p class="eyebrow">06 — Hobbies</p>
+            <h2>Hobbies</h2>
+            <div class="hobby-row">
+                <article class="info-card">
+                    <h3>Strength training &amp; powerlifting</h3>
+                    <p>Regular gym training focused on powerlifting — the same discipline and incremental progress I look for in engineering work.</p>
+                </article>
+                <article class="info-card">
+                    <h3>Reading</h3>
+                    <p>Winding down away from a screen.</p>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>Riyad Cornu — Toulouse, France</p>
+        <div class="footer-links">
+            <a href="https://github.com/BatReverse">GitHub</a>
+            <a href="https://www.linkedin.com/in/riyad-cornu-0a9088242/">LinkedIn</a>
+            <a href="https://youtu.be/0vOfXVZGBWo">Presentation</a>
+        </div>
+    </footer>
+
 </body>
 </html>
