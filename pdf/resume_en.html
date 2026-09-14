@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Riyad Cornu — Resume</title>
+<style>
+  @page {
+    size: A4;
+    margin: 16mm 18mm;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Carlito", "Calibri", "Arial", sans-serif;
+    font-size: 10.3pt;
+    color: #111;
+    line-height: 1.28;
+    margin: 0;
+  }
+  h1 {
+    text-align: center;
+    font-size: 16pt;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    margin: 0 0 4pt;
+    border-top: 1pt solid #111;
+    padding-top: 6pt;
+  }
+  .contact {
+    text-align: center;
+    font-size: 9.3pt;
+    margin: 0 0 6pt;
+    padding-bottom: 6pt;
+    border-bottom: 1pt solid #111;
+  }
+  .contact a { color: #111; text-decoration: none; }
+  h2 {
+    text-align: center;
+    font-size: 10.8pt;
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: 0.03em;
+    margin: 9pt 0 5pt;
+  }
+  .entry-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10pt;
+  }
+  .entry-head .org, .entry-head .role {
+    font-weight: 700;
+  }
+  .entry-head .loc, .entry-head .date {
+    white-space: nowrap;
+    font-size: 10pt;
+  }
+  .entry-sub {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10pt;
+    font-style: italic;
+    margin-bottom: 2pt;
+  }
+  .entry {
+    margin-bottom: 6pt;
+  }
+  ul {
+    margin: 1.5pt 0 0;
+    padding-left: 14pt;
+  }
+  li {
+    margin-bottom: 1pt;
+  }
+  .skills-row {
+    margin-bottom: 1.5pt;
+  }
+  .skills-row b {
+    font-weight: 700;
+  }
+</style>
+</head>
+<body>
+
+  <h1>Riyad Cornu</h1>
+  <p class="contact">
+    Toulouse, France &nbsp;•&nbsp;
+    <a href="mailto:riyadcornu.92@gmail.com">riyadcornu.92@gmail.com</a> &nbsp;•&nbsp;
+    06 52 01 21 26 &nbsp;•&nbsp;
+    <a href="https://www.linkedin.com/in/riyad-cornu-0a9088242/">linkedin.com/in/riyad-cornu</a> &nbsp;•&nbsp;
+    <a href="https://github.com/BatReverse">github.com/BatReverse</a>
+  </p>
+
+  <h2>Education</h2>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="org">Toulouse INP – ENSEEIHT (N7)</span>
+      <span class="loc">Toulouse, France</span>
+    </div>
+    <div class="entry-sub">
+      <span>Engineering degree, Systems &amp; Networks Architecture (ASR) track</span>
+      <span class="date">2025 – 2028 (expected)</span>
+    </div>
+    <ul>
+      <li>Core curriculum: computer architecture, networks &amp; telecommunications, language translation / compilation, concurrent &amp; distributed systems, formal methods (Why3, Coq).</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="org">CPGE MPI, Lycée Paul Valéry</span>
+      <span class="loc">Paris, France</span>
+    </div>
+    <div class="entry-sub">
+      <span>Preparatory classes — Mathematics, Physics, Computer Science</span>
+      <span class="date">2024 – 2025</span>
+    </div>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="org">CPGE MP2I–MPI, Lycée Hoche</span>
+      <span class="loc">Versailles, France</span>
+    </div>
+    <div class="entry-sub">
+      <span>Preparatory classes — Mathematics, Physics, Computer Science</span>
+      <span class="date">2022 – 2024</span>
+    </div>
+  </div>
+
+  <h2>Experience</h2>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="org">Basic Fit</span>
+      <span class="loc">Vélizy, France</span>
+    </div>
+    <div class="entry-sub">
+      <span>Front Desk Agent</span>
+      <span class="date">06/2024 – 09/2024 and 06/2025 – 09/2025</span>
+    </div>
+    <ul>
+      <li>Managed customer service and client relations.</li>
+      <li>Sold gym memberships and handled subscription inquiries.</li>
+      <li>Ensured cleanliness and proper functioning of the club facilities.</li>
+      <li>Provided after-sales service and support.</li>
+      <li>Resolved conflicts and maintained a positive atmosphere within the club.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="org">Auchan Drive</span>
+      <span class="loc">Vélizy, France</span>
+    </div>
+    <div class="entry-sub">
+      <span>Multi-skilled Team Member</span>
+      <span class="date">02/2022 – 07/2022</span>
+    </div>
+    <ul>
+      <li>Prepared and delivered customer orders efficiently.</li>
+      <li>Managed stock and inventory levels.</li>
+      <li>Maintained cleanliness and organization of the workspace.</li>
+    </ul>
+  </div>
+
+  <h2>Projects</h2>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="role">Neural Network from Scratch</span>
+      <span class="date">2025</span>
+    </div>
+    <ul>
+      <li>Built a neural network from scratch in CUDA, with no ML framework, including hand-written GPU kernels for every matrix operation.</li>
+      <li>Implemented backpropagation and the Adam optimizer; reached 96% accuracy on MNIST and 89% on EMNIST.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="role">CHIP-8 Emulator</span>
+      <span class="date">2026</span>
+    </div>
+    <ul>
+      <li>Wrote a CHIP-8 interpreter in C, implementing the full instruction set (opcode decoding, timers, stack, registers).</li>
+      <li>Used SDL2 for display rendering and keyboard input; validated against the IBM logo, Corax+, and BC_test ROMs.</li>
+    </ul>
+  </div>
+
+  <h2>Skills &amp; Interests</h2>
+  <p class="skills-row"><b>Technical:</b> C, Rust, Ada, CUDA (systems &amp; low-level); Python, MATLAB (applied/scientific computing); Why3, Coq (formal methods)</p>
+  <p class="skills-row"><b>Languages:</b> French (native), English (operational)</p>
+  <p class="skills-row"><b>Interests:</b> Strength training &amp; powerlifting, reading</p>
+
+</body>
+</html>
