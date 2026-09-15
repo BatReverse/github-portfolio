@@ -141,11 +141,8 @@
       <span class="date">06/2024 – 09/2024 and 06/2025 – 09/2025</span>
     </div>
     <ul>
-      <li>Managed customer service and client relations.</li>
-      <li>Sold gym memberships and handled subscription inquiries.</li>
-      <li>Ensured cleanliness and proper functioning of the club facilities.</li>
-      <li>Provided after-sales service and support.</li>
-      <li>Resolved conflicts and maintained a positive atmosphere within the club.</li>
+      <li>Managed customer relations, membership sales, and after-sales support.</li>
+      <li>Resolved conflicts and ensured proper functioning of the club facilities.</li>
     </ul>
   </div>
 
@@ -159,9 +156,7 @@
       <span class="date">02/2022 – 07/2022</span>
     </div>
     <ul>
-      <li>Prepared and delivered customer orders efficiently.</li>
-      <li>Managed stock and inventory levels.</li>
-      <li>Maintained cleanliness and organization of the workspace.</li>
+      <li>Prepared customer orders and managed stock and inventory levels.</li>
     </ul>
   </div>
 
@@ -175,6 +170,28 @@
     <ul>
       <li>Built a neural network from scratch in CUDA, with no ML framework, including hand-written GPU kernels for every matrix operation.</li>
       <li>Implemented backpropagation and the Adam optimizer; reached 96% accuracy on MNIST and 89% on EMNIST.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="role">Unix Mini-shell</span>
+      <span class="date">2026</span>
+    </div>
+    <ul>
+      <li>Unix shell in C: multi-command pipelines, I/O redirection (<code>&lt;</code>/<code>&gt;</code>), background execution (<code>&amp;</code>), and builtins (<code>cd</code>, <code>exit</code>, <code>rep</code>).</li>
+      <li>Process management via fork/execvp and pipes (pipe/dup2); asynchronous synchronization through a SIGCHLD handler (sigaction) and sigsuspend, with no busy-waiting or zombie processes.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="role">Memory Allocator (malloc)</span>
+      <span class="date">2026</span>
+    </div>
+    <ul>
+      <li>Reimplemented malloc/free/calloc/realloc in C directly on top of Linux primitives (mmap, sysconf), with no dependency on libc.</li>
+      <li>Linked-list block allocator with splitting and reuse of freed regions; validated with a unit test suite (memory alignment, multiple allocations, calloc, realloc, edge cases).</li>
     </ul>
   </div>
 

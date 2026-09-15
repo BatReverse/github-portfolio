@@ -158,6 +158,50 @@
 
             <article class="project-card">
                 <div class="project-head">
+                    <h3>Unix Mini-shell</h3>
+                    <span class="status-badge status-done">Completed</span>
+                </div>
+                <small>Own Unix shell, written in C</small>
+
+                <p class="block-label">Objectives</p>
+                <ul>
+                    <li>Build a Unix shell from scratch in C, on top of a provided command-line parser.</li>
+                    <li>Support multi-command pipelines and I/O redirection (<code>&lt;</code> / <code>&gt;</code>).</li>
+                    <li>Support background execution (<code>&amp;</code>) and builtins (<code>cd</code>, <code>exit</code>, <code>rep</code>).</li>
+                    <li>Avoid zombie processes and busy-waiting while a foreground command runs.</li>
+                </ul>
+                <p class="block-label">What I learned</p>
+                <ul>
+                    <li>Process management with fork/execvp, and chaining pipelines with pipe/dup2.</li>
+                    <li>Async-signal-safe reaping of children with a SIGCHLD handler (sigaction, SA_SIGINFO).</li>
+                    <li>Blocking/unblocking signals and waiting on a condition with sigsuspend instead of polling.</li>
+                </ul>
+            </article>
+
+            <article class="project-card">
+                <div class="project-head">
+                    <h3>Memory Allocator (malloc)</h3>
+                    <span class="status-badge status-done">Completed</span>
+                </div>
+                <small>Own malloc/free/calloc/realloc, written in C</small>
+
+                <p class="block-label">Objectives</p>
+                <ul>
+                    <li>Reimplement malloc, free, calloc, and realloc in C with no dependency on libc.</li>
+                    <li>Request memory from the OS directly via Linux primitives (mmap, sysconf).</li>
+                    <li>Reuse and split freed blocks instead of always requesting new pages.</li>
+                    <li>Validate the allocator with a unit test suite.</li>
+                </ul>
+                <p class="block-label">What I learned</p>
+                <ul>
+                    <li>How mmap-backed heaps and page-aligned allocations work under the hood.</li>
+                    <li>Designing a linked-list block allocator (metadata headers, splitting, reuse).</li>
+                    <li>Testing memory alignment, calloc zeroing, and realloc grow/shrink semantics.</li>
+                </ul>
+            </article>
+
+            <article class="project-card">
+                <div class="project-head">
                     <h3>CHIP-8 Emulator</h3>
                     <span class="status-badge status-done">Completed</span>
                 </div>
