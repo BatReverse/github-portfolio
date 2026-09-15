@@ -158,23 +158,24 @@
 
             <article class="project-card">
                 <div class="project-head">
-                    <h3>Unix Mini-shell</h3>
+                    <h3>CHIP-8 Emulator</h3>
                     <span class="status-badge status-done">Completed</span>
                 </div>
-                <small>Own Unix shell, written in C</small>
+                <small>Own CHIP-8 interpreter, written in C with SDL2</small>
 
                 <p class="block-label">Objectives</p>
                 <ul>
-                    <li>Build a Unix shell from scratch in C, on top of a provided command-line parser.</li>
-                    <li>Support multi-command pipelines and I/O redirection (<code>&lt;</code> / <code>&gt;</code>).</li>
-                    <li>Support background execution (<code>&amp;</code>) and builtins (<code>cd</code>, <code>exit</code>, <code>rep</code>).</li>
-                    <li>Avoid zombie processes and busy-waiting while a foreground command runs.</li>
+                    <li>Build a CHIP-8 emulator from scratch in C.</li>
+                    <li>Implement the full instruction set: opcode decoding, timers, stack, registers.</li>
+                    <li>Use SDL2 for display rendering and keyboard input.</li>
+                    <li>Validate correctness against reference test ROMs.</li>
                 </ul>
                 <p class="block-label">What I learned</p>
                 <ul>
-                    <li>Process management with fork/execvp, and chaining pipelines with pipe/dup2.</li>
-                    <li>Async-signal-safe reaping of children with a SIGCHLD handler (sigaction, SA_SIGINFO).</li>
-                    <li>Blocking/unblocking signals and waiting on a condition with sigsuspend instead of polling.</li>
+                    <li>How a fetch-decode-execute loop works in practice.</li>
+                    <li>Low-level bit manipulation for opcode decoding.</li>
+                    <li>Using SDL2 for real-time graphics and input handling.</li>
+                    <li>Validated against the IBM logo, Corax+ opcode, and BC_test ROMs.</li>
                 </ul>
             </article>
 
@@ -202,24 +203,23 @@
 
             <article class="project-card">
                 <div class="project-head">
-                    <h3>CHIP-8 Emulator</h3>
+                    <h3>Unix Mini-shell</h3>
                     <span class="status-badge status-done">Completed</span>
                 </div>
-                <small>Own CHIP-8 interpreter, written in C with SDL2</small>
+                <small>Own Unix shell, written in C</small>
 
                 <p class="block-label">Objectives</p>
                 <ul>
-                    <li>Build a CHIP-8 emulator from scratch in C.</li>
-                    <li>Implement the full instruction set: opcode decoding, timers, stack, registers.</li>
-                    <li>Use SDL2 for display rendering and keyboard input.</li>
-                    <li>Validate correctness against reference test ROMs.</li>
+                    <li>Build a Unix shell from scratch in C, on top of a provided command-line parser.</li>
+                    <li>Support multi-command pipelines and I/O redirection (<code>&lt;</code> / <code>&gt;</code>).</li>
+                    <li>Support background execution (<code>&amp;</code>) and builtins (<code>cd</code>, <code>exit</code>, <code>rep</code>).</li>
+                    <li>Avoid zombie processes and busy-waiting while a foreground command runs.</li>
                 </ul>
                 <p class="block-label">What I learned</p>
                 <ul>
-                    <li>How a fetch-decode-execute loop works in practice.</li>
-                    <li>Low-level bit manipulation for opcode decoding.</li>
-                    <li>Using SDL2 for real-time graphics and input handling.</li>
-                    <li>Validated against the IBM logo, Corax+ opcode, and BC_test ROMs.</li>
+                    <li>Process management with fork/execvp, and chaining pipelines with pipe/dup2.</li>
+                    <li>Async-signal-safe reaping of children with a SIGCHLD handler (sigaction, SA_SIGINFO).</li>
+                    <li>Blocking/unblocking signals and waiting on a condition with sigsuspend instead of polling.</li>
                 </ul>
             </article>
 
@@ -247,29 +247,6 @@
                     <li>Deep understanding of backpropagation and optimizers such as Adam.</li>
                     <li>Deep understanding of low-level memory management.</li>
                     <li>The CUDA API.</li>
-                </ul>
-            </article>
-
-            <article class="project-card">
-                <div class="project-head">
-                    <h3>Connect 4 Solver</h3>
-                    <span class="status-badge status-progress">In progress</span>
-                </div>
-                <small>Own Connect 4 engine, written in C</small>
-
-                <p class="block-label">Objectives</p>
-                <ul>
-                    <li>Build a Connect 4 game from scratch in C.</li>
-                    <li>Find the best move for a given board state.</li>
-                    <li>Cache previous results.</li>
-                    <li>Train the evaluation function.</li>
-                </ul>
-                <p class="block-label">What I've learned so far</p>
-                <ul>
-                    <li>Game theory.</li>
-                    <li>Efficient hash functions.</li>
-                    <li>Monte Carlo Tree Search.</li>
-                    <li>Efficient caching strategies.</li>
                 </ul>
             </article>
         </section>
