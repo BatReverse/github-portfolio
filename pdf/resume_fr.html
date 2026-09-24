@@ -6,47 +6,60 @@
 <style>
   @page {
     size: A4;
-    margin: 8mm 17mm;
+    margin: 10mm 13mm;
   }
   * { box-sizing: border-box; }
   body {
     font-family: "Carlito", "Calibri", "Arial", sans-serif;
     font-size: 10.3pt;
-    color: #111;
-    line-height: 1.28;
+    color: #1f2933;
+    line-height: 1.3;
     margin: 0;
   }
+  a { color: inherit; text-decoration: none; }
+  header {
+    border-left: 4pt solid #1d4e89;
+    padding: 2pt 0 2pt 10pt;
+    margin-bottom: 8pt;
+  }
   h1 {
-    text-align: center;
-    font-size: 16pt;
+    font-size: 22pt;
     font-weight: 700;
-    letter-spacing: 0.02em;
-    margin: 0 0 4pt;
-    border-top: 1pt solid #111;
-    padding-top: 6pt;
+    color: #1d4e89;
+    letter-spacing: 0.03em;
+    margin: 0 0 2pt;
   }
   .contact {
-    text-align: center;
     font-size: 9.3pt;
-    margin: 0 0 4pt;
+    color: #52606d;
+    margin: 0;
   }
-  .contact a { color: #111; text-decoration: none; }
+  .contact .sep { color: #2a9d8f; padding: 0 3pt; }
   .objective {
-    text-align: center;
     font-size: 9.5pt;
     font-style: italic;
-    margin: 0 0 6pt;
-    padding-bottom: 6pt;
-    border-bottom: 1pt solid #111;
+    color: #1f2933;
+    margin: 4pt 0 0;
+  }
+  section {
+    display: flex;
+    border-top: 0.75pt solid #d5dde8;
+    padding-top: 6pt;
+    margin-top: 6pt;
   }
   h2 {
-    text-align: center;
-    font-size: 10.8pt;
+    flex: none;
+    width: 30mm;
+    padding-right: 8pt;
+    margin: 0;
+    font-size: 9.3pt;
     font-weight: 700;
-    text-transform: none;
-    letter-spacing: 0.03em;
-    margin: 5pt 0 3.5pt;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    line-height: 1.25;
+    color: #1d4e89;
   }
+  .content { flex: 1; min-width: 0; }
   .entry-head {
     display: flex;
     justify-content: space-between;
@@ -55,10 +68,13 @@
   }
   .entry-head .org, .entry-head .role {
     font-weight: 700;
+    color: #102a43;
   }
-  .entry-head .loc, .entry-head .date {
+  .entry-head .loc, .entry-head .date,
+  .entry-sub .date {
     white-space: nowrap;
-    font-size: 10pt;
+    font-size: 9.3pt;
+    color: #52606d;
   }
   .entry-sub {
     display: flex;
@@ -66,172 +82,192 @@
     align-items: baseline;
     gap: 10pt;
     font-style: italic;
-    margin-bottom: 2pt;
+    color: #2a9d8f;
+    margin-bottom: 1pt;
   }
-  .entry {
-    margin-bottom: 5pt;
-  }
+  .entry-sub .date { font-style: normal; }
+  .entry { margin-bottom: 6pt; }
+  .entry:last-child { margin-bottom: 0; }
   ul {
     margin: 1pt 0 0;
-    padding-left: 14pt;
+    padding-left: 11pt;
   }
-  li {
-    margin-bottom: 0.5pt;
+  li { margin-bottom: 0.5pt; }
+  li::marker { color: #2a9d8f; }
+  code {
+    font-family: "DejaVu Sans Mono", monospace;
+    font-size: 8.3pt;
+    color: #102a43;
   }
-  .skills-row {
-    margin-bottom: 1.5pt;
-  }
-  .skills-row b {
-    font-weight: 700;
-  }
+  .skills-row { margin: 0 0 1.5pt; }
+  .skills-row:last-child { margin-bottom: 0; }
+  .skills-row b { font-weight: 700; color: #102a43; }
 </style>
 </head>
 <body>
 
-  <h1>Riyad Cornu</h1>
-  <p class="contact">
-    Toulouse, France &nbsp;•&nbsp;
-    <a href="mailto:riyadcornu.92@gmail.com">riyadcornu.92@gmail.com</a> &nbsp;•&nbsp;
-    06 52 01 21 26 &nbsp;•&nbsp;
-    <a href="https://www.linkedin.com/in/riyad-cornu-0a9088242/">linkedin.com/in/riyad-cornu</a> &nbsp;•&nbsp;
-    <a href="https://github.com/BatReverse">github.com/BatReverse</a>
-  </p>
-  <p class="objective">
-    Recherche un stage technique (entreprise ou laboratoire), systèmes embarqués de préférence &mdash;
-    8 semaines minimum, du 07/06/2027 à mi-septembre 2027
-  </p>
+  <header>
+    <h1>Riyad Cornu</h1>
+    <p class="contact">
+      Toulouse, France <span class="sep">•</span>
+      <a href="mailto:riyadcornu.92@gmail.com">riyadcornu.92@gmail.com</a> <span class="sep">•</span>
+      06 52 01 21 26 <span class="sep">•</span>
+      <a href="https://www.linkedin.com/in/riyad-cornu-0a9088242/">linkedin.com/in/riyad-cornu</a> <span class="sep">•</span>
+      <a href="https://github.com/BatReverse">github.com/BatReverse</a>
+    </p>
+    <p class="objective">
+      Recherche un stage technique (entreprise ou laboratoire), systèmes embarqués de préférence &mdash;
+      8 semaines minimum, du 07/06/2027 à mi-septembre 2027
+    </p>
+  </header>
 
-  <h2>Formation</h2>
+  <section>
+    <h2>Formation</h2>
+    <div class="content">
+      <div class="entry">
+        <div class="entry-head">
+          <span class="org">Toulouse INP – ENSEEIHT (N7)</span>
+          <span class="loc">Toulouse, France</span>
+        </div>
+        <div class="entry-sub">
+          <span>Diplôme d'ingénieur, filière Architecture des Systèmes et Réseaux (ASR)</span>
+          <span class="date">2025 – 2028 (prévu)</span>
+        </div>
+        <ul>
+          <li>Tronc commun : architecture des ordinateurs, réseaux &amp; télécommunications, traduction des langages / compilation, systèmes concurrents &amp; répartis, méthodes formelles (Why3, Coq).</li>
+        </ul>
+      </div>
 
-  <div class="entry">
-    <div class="entry-head">
-      <span class="org">Toulouse INP – ENSEEIHT (N7)</span>
-      <span class="loc">Toulouse, France</span>
-    </div>
-    <div class="entry-sub">
-      <span>Diplôme d'ingénieur, filière Architecture des Systèmes et Réseaux (ASR)</span>
-      <span class="date">2025 – 2028 (prévu)</span>
-    </div>
-    <ul>
-      <li>Tronc commun : architecture des ordinateurs, réseaux &amp; télécommunications, traduction des langages / compilation, systèmes concurrents &amp; répartis, méthodes formelles (Why3, Coq).</li>
-    </ul>
-  </div>
+      <div class="entry">
+        <div class="entry-head">
+          <span class="org">CPGE MPI, Lycée Paul Valéry</span>
+          <span class="loc">Paris, France</span>
+        </div>
+        <div class="entry-sub">
+          <span>Classes préparatoires — Mathématiques, Physique, Informatique</span>
+          <span class="date">2024 – 2025</span>
+        </div>
+      </div>
 
-  <div class="entry">
-    <div class="entry-head">
-      <span class="org">CPGE MPI, Lycée Paul Valéry</span>
-      <span class="loc">Paris, France</span>
+      <div class="entry">
+        <div class="entry-head">
+          <span class="org">CPGE MP2I–MPI, Lycée Hoche</span>
+          <span class="loc">Versailles, France</span>
+        </div>
+        <div class="entry-sub">
+          <span>Classes préparatoires — Mathématiques, Physique, Informatique</span>
+          <span class="date">2022 – 2024</span>
+        </div>
+      </div>
     </div>
-    <div class="entry-sub">
-      <span>Classes préparatoires — Mathématiques, Physique, Informatique</span>
-      <span class="date">2024 – 2025</span>
-    </div>
-  </div>
+  </section>
 
-  <div class="entry">
-    <div class="entry-head">
-      <span class="org">CPGE MP2I–MPI, Lycée Hoche</span>
-      <span class="loc">Versailles, France</span>
-    </div>
-    <div class="entry-sub">
-      <span>Classes préparatoires — Mathématiques, Physique, Informatique</span>
-      <span class="date">2022 – 2024</span>
-    </div>
-  </div>
+  <section>
+    <h2>Expériences</h2>
+    <div class="content">
+      <div class="entry">
+        <div class="entry-head">
+          <span class="org">Basic Fit</span>
+          <span class="loc">Vélizy, France</span>
+        </div>
+        <div class="entry-sub">
+          <span>Agent d'accueil</span>
+          <span class="date">06/2024 – 09/2024 et 06/2025 – 09/2025</span>
+        </div>
+        <ul>
+          <li>Gestion de la relation client, vente d'abonnements et service après-vente.</li>
+          <li>Résolution de conflits et bon fonctionnement des équipements du club.</li>
+        </ul>
+      </div>
 
-  <h2>Expérience</h2>
-
-  <div class="entry">
-    <div class="entry-head">
-      <span class="org">Basic Fit</span>
-      <span class="loc">Vélizy, France</span>
+      <div class="entry">
+        <div class="entry-head">
+          <span class="org">Auchan Drive</span>
+          <span class="loc">Vélizy, France</span>
+        </div>
+        <div class="entry-sub">
+          <span>Employé polyvalent</span>
+          <span class="date">02/2022 – 07/2022</span>
+        </div>
+        <ul>
+          <li>Préparation des commandes clients et gestion des stocks.</li>
+        </ul>
+      </div>
     </div>
-    <div class="entry-sub">
-      <span>Agent d'accueil</span>
-      <span class="date">06/2024 – 09/2024 et 06/2025 – 09/2025</span>
+  </section>
+
+  <section>
+    <h2>Projets</h2>
+    <div class="content">
+      <div class="entry">
+        <div class="entry-head">
+          <span class="role">Réseau de neurones from scratch</span>
+          <span class="date">2025</span>
+        </div>
+        <ul>
+          <li>Réseau de neurones entièrement écrit en CUDA, sans framework de ML, avec des kernels GPU codés à la main pour chaque opération matricielle.</li>
+          <li>Implémentation de la rétropropagation et de l'optimiseur Adam ; 96&nbsp;% de précision sur MNIST et 89&nbsp;% sur EMNIST.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="role">Mini-shell UNIX</span>
+          <span class="date">2026</span>
+        </div>
+        <ul>
+          <li>Shell UNIX en C : gestion de pipelines multi-commandes, redirections d'entrée/sortie (<code>&lt;</code>/<code>&gt;</code>), exécution en arrière-plan (<code>&amp;</code>) et builtins (<code>cd</code>, <code>exit</code>, <code>rep</code>).</li>
+          <li>Gestion des processus par fork/execvp et tubes (pipe/dup2) ; synchronisation asynchrone via un handler SIGCHLD (sigaction) et sigsuspend, sans attente active ni zombies.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="role">Allocateur mémoire (malloc)</span>
+          <span class="date">2026</span>
+        </div>
+        <ul>
+          <li>Réimplémentation de malloc/free/calloc/realloc en C directement au-dessus des primitives Linux (mmap, sysconf), sans dépendre de la libc.</li>
+          <li>Allocateur par liste chaînée de blocs avec découpage et réutilisation des zones libérées ; validé par une suite de tests unitaires (alignement mémoire, allocations multiples, calloc, realloc, cas limites).</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="role">Émulateur CHIP-8</span>
+          <span class="date">2026</span>
+        </div>
+        <ul>
+          <li>Interpréteur CHIP-8 en C, implémentant le jeu d'instructions complet (décodage des opcodes, timers, pile, registres).</li>
+          <li>Utilisation de SDL2 pour l'affichage et la gestion du clavier ; validé sur les ROMs IBM logo, Corax+ et BC_test.</li>
+        </ul>
+      </div>
     </div>
-    <ul>
-      <li>Gestion de la relation client, vente d'abonnements et service après-vente.</li>
-      <li>Résolution de conflits et bon fonctionnement des équipements du club.</li>
-    </ul>
-  </div>
+  </section>
 
-  <div class="entry">
-    <div class="entry-head">
-      <span class="org">Auchan Drive</span>
-      <span class="loc">Vélizy, France</span>
+  <section>
+    <h2>Certifications</h2>
+    <div class="content">
+      <div class="entry">
+        <div class="entry-head">
+          <span class="role">MOOC Gestion de Projet (GdP27)</span>
+          <span class="date">Mars 2026</span>
+        </div>
+        <ul>
+          <li>MOOC Gestion de Projet (Rémi Bachelet, Centrale Lille), 27<sup>e</sup> session — modules « MRP » (Méthodologie de Résolution de Problème) et « GPAS » (Gestion de Projet Agile avec Scrum) — <a href="https://mooc.gestiondeprojet.pm/">mooc.gestiondeprojet.pm</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="entry-sub">
-      <span>Employé polyvalent</span>
-      <span class="date">02/2022 – 07/2022</span>
+  </section>
+
+  <section>
+    <h2>Compétences &amp; Centres d'intérêt</h2>
+    <div class="content">
+      <p class="skills-row"><b>Techniques :</b> C, Rust, Ada, CUDA (systèmes &amp; bas niveau) ; Python, MATLAB (calcul scientifique / appliqué) ; Why3, Coq (méthodes formelles)</p>
+      <p class="skills-row"><b>Langues :</b> Français (natif), Anglais (B2/C1)</p>
+      <p class="skills-row"><b>Centres d'intérêt :</b> Musculation &amp; force athlétique (powerlifting), lecture</p>
     </div>
-    <ul>
-      <li>Préparation des commandes clients et gestion des stocks.</li>
-    </ul>
-  </div>
-
-  <h2>Projets</h2>
-
-  <div class="entry">
-    <div class="entry-head">
-      <span class="role">Réseau de neurones from scratch</span>
-      <span class="date">2025</span>
-    </div>
-    <ul>
-      <li>Réseau de neurones entièrement écrit en CUDA, sans framework de ML, avec des kernels GPU codés à la main pour chaque opération matricielle.</li>
-      <li>Implémentation de la rétropropagation et de l'optimiseur Adam ; 96&nbsp;% de précision sur MNIST et 89&nbsp;% sur EMNIST.</li>
-    </ul>
-  </div>
-
-  <div class="entry">
-    <div class="entry-head">
-      <span class="role">Mini-shell UNIX</span>
-      <span class="date">2026</span>
-    </div>
-    <ul>
-      <li>Shell UNIX en C : gestion de pipelines multi-commandes, redirections d'entrée/sortie (<code>&lt;</code>/<code>&gt;</code>), exécution en arrière-plan (<code>&amp;</code>) et builtins (<code>cd</code>, <code>exit</code>, <code>rep</code>).</li>
-      <li>Gestion des processus par fork/execvp et tubes (pipe/dup2) ; synchronisation asynchrone via un handler SIGCHLD (sigaction) et sigsuspend, sans attente active ni zombies.</li>
-    </ul>
-  </div>
-
-  <div class="entry">
-    <div class="entry-head">
-      <span class="role">Allocateur mémoire (malloc)</span>
-      <span class="date">2026</span>
-    </div>
-    <ul>
-      <li>Réimplémentation de malloc/free/calloc/realloc en C directement au-dessus des primitives Linux (mmap, sysconf), sans dépendre de la libc.</li>
-      <li>Allocateur par liste chaînée de blocs avec découpage et réutilisation des zones libérées ; validé par une suite de tests unitaires (alignement mémoire, allocations multiples, calloc, realloc, cas limites).</li>
-    </ul>
-  </div>
-
-  <div class="entry">
-    <div class="entry-head">
-      <span class="role">Émulateur CHIP-8</span>
-      <span class="date">2026</span>
-    </div>
-    <ul>
-      <li>Interpréteur CHIP-8 en C, implémentant le jeu d'instructions complet (décodage des opcodes, timers, pile, registres).</li>
-      <li>Utilisation de SDL2 pour l'affichage et la gestion du clavier ; validé sur les ROMs IBM logo, Corax+ et BC_test.</li>
-    </ul>
-  </div>
-
-  <h2>Certifications</h2>
-
-  <div class="entry">
-    <div class="entry-head">
-      <span class="role">MOOC Gestion de Projet (GdP27)</span>
-      <span class="date">Mars 2026</span>
-    </div>
-    <ul>
-      <li>MOOC Gestion de Projet (Rémi Bachelet, Centrale Lille), 27<sup>e</sup> session — modules « MRP » (Méthodologie de Résolution de Problème) et « GPAS » (Gestion de Projet Agile avec Scrum) — <a href="https://mooc.gestiondeprojet.pm/">mooc.gestiondeprojet.pm</a></li>
-    </ul>
-  </div>
-
-  <h2>Compétences &amp; Centres d'intérêt</h2>
-  <p class="skills-row"><b>Techniques :</b> C, Rust, Ada, CUDA (systèmes &amp; bas niveau) ; Python, MATLAB (calcul scientifique / appliqué) ; Why3, Coq (méthodes formelles)</p>
-  <p class="skills-row"><b>Langues :</b> Français (natif), Anglais (opérationnel)</p>
-  <p class="skills-row"><b>Centres d'intérêt :</b> Musculation &amp; force athlétique (powerlifting), lecture</p>
+  </section>
 
 </body>
 </html>
