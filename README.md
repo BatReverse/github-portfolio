@@ -22,9 +22,11 @@ Personal portfolio site, built as a single static page with plain HTML and CSS (
 ## Structure
 
 ```
-index.html          # single-page site
+index.html          # single-page site (English)
+fr/index.html       # French version (EN / FR switch in the nav)
 style/style.css      # all styling
 pdf/resume_en.pdf    # résumé, embedded in the Career section
+pdf/resume_fr.pdf    # French résumé, embedded in fr/index.html
 ```
 
 ## Run locally
