@@ -27,6 +27,8 @@ fr/index.html       # French version (EN / FR switch in the nav)
 style/style.css      # all styling
 pdf/resume_en.pdf    # résumé, embedded in the Career section
 pdf/resume_fr.pdf    # French résumé, embedded in fr/index.html
+pdf/build.sh         # resume HTML → PDF, via WeasyPrint
+pdf/cv_thales_fr.pdf # CV tailored to a specific offer (Thales, Analyses Mécaniques)
 ```
 
 ## Run locally
