@@ -205,6 +205,28 @@
 
             <article class="project-card">
                 <div class="project-head">
+                    <h3>Maître SPI sur FPGA (VHDL)</h3>
+                    <span class="status-badge status-done">Terminé</span>
+                </div>
+                <small>Mini-projet d'architecture des ordinateurs à l'ENSEEIHT · VHDL sur carte Nexys 4 avec joystick PmodJSTK</small>
+
+                <p class="block-label">Objectifs</p>
+                <ul>
+                    <li>Implémenter un maître SPI (mode 0) en VHDL, découpé en composants réutilisables.</li>
+                    <li>Concevoir une unité d'échange full-duplex d'un octet (<code>er_1octet</code>) : décalage MSB en premier, génération de <code>sclk</code>.</li>
+                    <li>Concevoir un maître multi-octets sous forme d'automate gérant <code>ss</code>, les délais d'attente de l'esclave et les pauses entre octets.</li>
+                    <li>Piloter un vrai joystick PmodJSTK depuis le FPGA Nexys 4 : lire les axes X/Y sur 10 bits et les boutons, commander ses LEDs.</li>
+                </ul>
+                <p class="block-label">Ce que j'ai appris</p>
+                <ul>
+                    <li>Écrire du VHDL synthétisable : processus synchrones, signaux d'enable, resets synchrones/asynchrones.</li>
+                    <li>Concevoir des automates qui respectent les contraintes temporelles d'un périphérique (attentes de l'ordre de la µs à 1&nbsp;MHz).</li>
+                    <li>Écrire des bancs de test et analyser des chronogrammes avec GHDL et GTKWave.</li>
+                </ul>
+            </article>
+
+            <article class="project-card">
+                <div class="project-head">
                     <h3>Émulateur CHIP-8</h3>
                     <span class="status-badge status-done">Terminé</span>
                 </div>

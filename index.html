@@ -204,6 +204,28 @@
 
             <article class="project-card">
                 <div class="project-head">
+                    <h3>SPI Master on FPGA (VHDL)</h3>
+                    <span class="status-badge status-done">Completed</span>
+                </div>
+                <small>ENSEEIHT computer architecture mini-project · VHDL on a Nexys 4 board with a PmodJSTK joystick</small>
+
+                <p class="block-label">Objectives</p>
+                <ul>
+                    <li>Implement an SPI master (mode 0) in VHDL, split into reusable components.</li>
+                    <li>Build a single-byte full-duplex exchange unit (<code>er_1octet</code>): MSB-first shifting, <code>sclk</code> generation.</li>
+                    <li>Build a multi-byte master as a finite-state machine handling <code>ss</code>, slave setup delays and inter-byte waits.</li>
+                    <li>Drive a real PmodJSTK joystick from the Nexys 4 FPGA: read the 10-bit X/Y axes and buttons, control its LEDs.</li>
+                </ul>
+                <p class="block-label">What I learned</p>
+                <ul>
+                    <li>Writing synthesizable VHDL: clocked processes, clock enables, synchronous/asynchronous resets.</li>
+                    <li>Designing FSMs that respect a peripheral's timing constraints (µs-level waits at 1&nbsp;MHz).</li>
+                    <li>Writing testbenches and debugging waveforms with GHDL and GTKWave.</li>
+                </ul>
+            </article>
+
+            <article class="project-card">
+                <div class="project-head">
                     <h3>CHIP-8 Emulator</h3>
                     <span class="status-badge status-done">Completed</span>
                 </div>
