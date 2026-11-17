@@ -20,7 +20,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../style/style.css">
 </head>
@@ -62,7 +62,7 @@
                         <span class="flag">--github</span>
                     </a>
                     <a role="listitem" href="#career">
-                        <span class="flag">--cv</span>
+                        <span class="flag flag-primary">--cv</span>
                     </a>
                 </div>
             </div>
@@ -156,7 +156,7 @@
             <div class="tool-group">
                 <h3>Certifications</h3>
                 <div class="chip-row">
-                    <a href="https://mooc.gestiondeprojet.pm/" target="_blank" rel="noopener" style="text-decoration:none;">
+                    <a href="https://mooc.gestiondeprojet.pm/" target="_blank" rel="noopener" class="chip-link">
                         <span class="chip">MOOC Gestion de Projet (GdP27)</span>
                     </a>
                 </div>
@@ -210,6 +210,46 @@
                 </div>
                 <small>Mini-projet d'architecture des ordinateurs à l'ENSEEIHT · VHDL sur carte Nexys 4 avec joystick PmodJSTK</small>
 
+                <figure class="project-fig">
+                    <svg class="fig" viewBox="0 0 664 220" role="img" aria-label="Chronogramme SPI mode 0 de l'échange d'un octet">
+                        <text class="sig" x="8" y="43">ss</text>
+                        <text class="sig" x="8" y="91">sclk</text>
+                        <text class="sig" x="8" y="139">mosi</text>
+                        <text class="sig" x="8" y="187">miso</text>
+                        <polyline class="wave" points="72,28 104,28 104,48 656,48"/>
+                        <polyline class="wave" points="72,76 184,76 184,96 212,96 212,76 240,76 240,96 268,96 268,76 296,76 296,96 324,96 324,76 352,76 352,96 380,96 380,76 408,76 408,96 436,96 436,76 464,76 464,96 492,96 492,76 520,76 520,96 548,96 548,76 576,76 576,96 604,96 604,76 656,76"/>
+                        <polyline class="wave" points="72,144 184,144 184,144 240,144 240,144 296,144 296,144 352,144 352,144 408,144 408,144 464,144 464,144 520,144 520,144 576,144 576,124 656,124"/>
+                        <polyline class="wave" points="72,192 184,192 184,172 240,172 240,192 296,192 296,172 352,172 352,192 408,192 408,192 464,192 464,172 520,172 520,192 576,192 576,172 656,172"/>
+                        <text class="note" x="144" y="66" text-anchor="middle">attente ≥ 15 µs</text>
+                        <line class="sample" x1="212" y1="72" x2="212" y2="196"/>
+                        <circle class="dot" cx="212" cy="172" r="3.5"/>
+                        <text class="note" x="212" y="116" text-anchor="middle">b7</text>
+                        <line class="sample" x1="268" y1="72" x2="268" y2="196"/>
+                        <circle class="dot" cx="268" cy="192" r="3.5"/>
+                        <text class="note" x="268" y="116" text-anchor="middle">b6</text>
+                        <line class="sample" x1="324" y1="72" x2="324" y2="196"/>
+                        <circle class="dot" cx="324" cy="172" r="3.5"/>
+                        <text class="note" x="324" y="116" text-anchor="middle">b5</text>
+                        <line class="sample" x1="380" y1="72" x2="380" y2="196"/>
+                        <circle class="dot" cx="380" cy="192" r="3.5"/>
+                        <text class="note" x="380" y="116" text-anchor="middle">b4</text>
+                        <line class="sample" x1="436" y1="72" x2="436" y2="196"/>
+                        <circle class="dot" cx="436" cy="192" r="3.5"/>
+                        <text class="note" x="436" y="116" text-anchor="middle">b3</text>
+                        <line class="sample" x1="492" y1="72" x2="492" y2="196"/>
+                        <circle class="dot" cx="492" cy="172" r="3.5"/>
+                        <text class="note" x="492" y="116" text-anchor="middle">b2</text>
+                        <line class="sample" x1="548" y1="72" x2="548" y2="196"/>
+                        <circle class="dot" cx="548" cy="192" r="3.5"/>
+                        <text class="note" x="548" y="116" text-anchor="middle">b1</text>
+                        <line class="sample" x1="604" y1="72" x2="604" y2="196"/>
+                        <circle class="dot" cx="604" cy="172" r="3.5"/>
+                        <text class="note" x="604" y="116" text-anchor="middle">b0</text>
+                        <text class="note acc" x="212" y="212" text-anchor="middle">↑ lecture</text>
+                    </svg>
+                    <figcaption>Mode 0, poids fort en premier : les deux côtés décalent sur le front descendant de sclk, le maître lit miso sur le front montant. Exemple : 0x01 (état des LEDs) envoyé, 0xA5 (octet bas de X) reçu</figcaption>
+                </figure>
+
                 <p class="block-label">Objectifs</p>
                 <ul>
                     <li>Implémenter un maître SPI (mode 0) en VHDL, découpé en composants réutilisables.</li>
@@ -231,6 +271,55 @@
                     <span class="status-badge status-done">Terminé</span>
                 </div>
                 <small>Interpréteur CHIP-8 maison, écrit en C avec SDL2</small>
+
+                <figure class="project-fig">
+                    <svg class="fig" viewBox="0 0 664 200" role="img" aria-label="Lecture et décodage de l'opcode CHIP-8 0xD015">
+                        <text class="note" x="16" y="16">ram[4096]</text>
+                        <rect class="cell" x="16" y="28" width="128" height="24"/>
+                        <text class="note" x="24" y="44.0">0x000</text>
+                        <text class="note" x="136" y="44.0" text-anchor="end">réservé</text>
+                        <rect class="cell" x="16" y="52" width="128" height="24"/>
+                        <text class="note" x="24" y="68.0">0x050</text>
+                        <text class="note" x="136" y="68.0" text-anchor="end">police</text>
+                        <rect class="cell-gap" x="16" y="76" width="128" height="16"/>
+                        <text class="note" x="136" y="88.0" text-anchor="end">…</text>
+                        <rect class="cell" x="16" y="92" width="128" height="24"/>
+                        <text class="note" x="24" y="108.0">0x200</text>
+                        <text class="note" x="136" y="108.0" text-anchor="end">programme</text>
+                        <rect class="cell-acc" x="16" y="116" width="128" height="24"/>
+                        <text class="note" x="24" y="132.0">PC</text>
+                        <text class="code" x="136" y="132.0" text-anchor="end">D0</text>
+                        <rect class="cell-acc" x="16" y="140" width="128" height="24"/>
+                        <text class="note" x="24" y="156.0">PC+1</text>
+                        <text class="code" x="136" y="156.0" text-anchor="end">15</text>
+                        <rect class="cell-gap" x="16" y="164" width="128" height="16"/>
+                        <text class="note" x="136" y="176.0" text-anchor="end">… 0xFFF</text>
+                        <line class="arrow" x1="152" y1="96" x2="178" y2="96"/><path class="arrow-head" d="M184 96 l-7 -4 v8 z"/>
+                        <text class="note" x="184" y="56">opcode = ram[PC] &lt;&lt; 8 | ram[PC+1]</text>
+                        <rect class="cell-acc" x="184" y="68" width="56" height="48" rx="4"/>
+                        <text class="big" x="212" y="100" text-anchor="middle">D</text>
+                        <text class="sig" x="212" y="136" text-anchor="middle">op</text>
+                        <text class="note" x="212" y="152" text-anchor="middle">0xF000</text>
+                        <rect class="cell" x="244" y="68" width="56" height="48" rx="4"/>
+                        <text class="big" x="272" y="100" text-anchor="middle">0</text>
+                        <text class="sig" x="272" y="136" text-anchor="middle">X</text>
+                        <text class="note" x="272" y="152" text-anchor="middle">V0</text>
+                        <rect class="cell" x="304" y="68" width="56" height="48" rx="4"/>
+                        <text class="big" x="332" y="100" text-anchor="middle">1</text>
+                        <text class="sig" x="332" y="136" text-anchor="middle">Y</text>
+                        <text class="note" x="332" y="152" text-anchor="middle">V1</text>
+                        <rect class="cell" x="364" y="68" width="56" height="48" rx="4"/>
+                        <text class="big" x="392" y="100" text-anchor="middle">5</text>
+                        <text class="sig" x="392" y="136" text-anchor="middle">N</text>
+                        <text class="note" x="392" y="152" text-anchor="middle">5 lignes</text>
+                        <text class="code" x="184" y="184">OP_DXYN(chip, X, Y, N)</text>
+                        <line class="arrow" x1="428" y1="96" x2="450" y2="96"/><path class="arrow-head" d="M456 96 l-7 -4 v8 z"/>
+                        <text class="note" x="464" y="36">gfx[64*32]</text>
+                        <rect class="screen" x="464" y="48" width="192" height="96" rx="2"/>
+                        <g class="px"><rect x="482" y="66" width="3" height="3"/><rect x="485" y="66" width="3" height="3"/><rect x="488" y="66" width="3" height="3"/><rect x="482" y="69" width="3" height="3"/><rect x="491" y="69" width="3" height="3"/><rect x="482" y="72" width="3" height="3"/><rect x="491" y="72" width="3" height="3"/><rect x="482" y="75" width="3" height="3"/><rect x="491" y="75" width="3" height="3"/><rect x="482" y="78" width="3" height="3"/><rect x="485" y="78" width="3" height="3"/><rect x="488" y="78" width="3" height="3"/><rect x="503" y="66" width="3" height="3"/><rect x="506" y="66" width="3" height="3"/><rect x="509" y="66" width="3" height="3"/><rect x="512" y="66" width="3" height="3"/><rect x="503" y="69" width="3" height="3"/><rect x="512" y="69" width="3" height="3"/><rect x="503" y="72" width="3" height="3"/><rect x="512" y="72" width="3" height="3"/><rect x="503" y="75" width="3" height="3"/><rect x="512" y="75" width="3" height="3"/><rect x="503" y="78" width="3" height="3"/><rect x="506" y="78" width="3" height="3"/><rect x="509" y="78" width="3" height="3"/><rect x="512" y="78" width="3" height="3"/><rect x="530" y="66" width="3" height="3"/><rect x="527" y="69" width="3" height="3"/><rect x="530" y="69" width="3" height="3"/><rect x="530" y="72" width="3" height="3"/><rect x="530" y="75" width="3" height="3"/><rect x="527" y="78" width="3" height="3"/><rect x="530" y="78" width="3" height="3"/><rect x="533" y="78" width="3" height="3"/><rect x="545" y="66" width="3" height="3"/><rect x="548" y="66" width="3" height="3"/><rect x="551" y="66" width="3" height="3"/><rect x="554" y="66" width="3" height="3"/><rect x="545" y="69" width="3" height="3"/><rect x="545" y="72" width="3" height="3"/><rect x="548" y="72" width="3" height="3"/><rect x="551" y="72" width="3" height="3"/><rect x="554" y="72" width="3" height="3"/><rect x="554" y="75" width="3" height="3"/><rect x="545" y="78" width="3" height="3"/><rect x="548" y="78" width="3" height="3"/><rect x="551" y="78" width="3" height="3"/><rect x="554" y="78" width="3" height="3"/></g>
+                    </svg>
+                    <figcaption>Lecture de deux octets à PC, découpage de l'opcode en quartets, aiguillage sur le premier. 0xD015 dessine un sprite de 5 lignes en (V0, V1), ici les glyphes de la police intégrée</figcaption>
+                </figure>
 
                 <p class="block-label">Objectifs</p>
                 <ul>
@@ -255,6 +344,48 @@
                 </div>
                 <small>malloc/free/calloc/realloc maison, écrits en C</small>
 
+                <figure class="project-fig">
+                    <svg class="fig" viewBox="0 0 664 216" role="img" aria-label="Placement des blocs de mon_malloc dans une page mmap">
+                        <text class="note" x="648" y="16" text-anchor="end">mmap · 1 page = 4096 o</text>
+                        <text class="sig" x="8" y="54">malloc(32)</text>
+                        <rect class="cell-hdr-new" x="136" y="32" width="40" height="32"/>
+                        <text class="hdr-text" x="156.0" y="52" text-anchor="middle">hdr</text>
+                        <rect class="cell-acc" x="176" y="32" width="64" height="32"/>
+                        <text class="code" x="208.0" y="52" text-anchor="middle">A · 32</text>
+                        <rect class="cell-gap" x="240" y="32" width="408" height="32"/>
+                        <text class="note" x="444.0" y="52" text-anchor="middle">4032 libre</text>
+                        <text class="sig" x="8" y="110">malloc(64)</text>
+                        <rect class="cell-hdr" x="136" y="88" width="40" height="32"/>
+                        <text class="hdr-text" x="156.0" y="108" text-anchor="middle">hdr</text>
+                        <rect class="cell" x="176" y="88" width="64" height="32"/>
+                        <text class="code" x="208.0" y="108" text-anchor="middle">A · 32</text>
+                        <rect class="cell-hdr-new" x="240" y="88" width="40" height="32"/>
+                        <text class="hdr-text" x="260.0" y="108" text-anchor="middle">hdr</text>
+                        <rect class="cell-acc" x="280" y="88" width="96" height="32"/>
+                        <text class="code" x="328.0" y="108" text-anchor="middle">B · 64</text>
+                        <rect class="cell-gap" x="376" y="88" width="272" height="32"/>
+                        <text class="note" x="512.0" y="108" text-anchor="middle">3936 libre</text>
+                        <path class="link" d="M156 88 C156 76 260 76 260 86"/>
+                        <text class="sig" x="8" y="166">free(A)</text>
+                        <text class="sig" x="8" y="182">malloc(24)</text>
+                        <rect class="cell-hdr" x="136" y="144" width="40" height="32"/>
+                        <text class="hdr-text" x="156.0" y="164" text-anchor="middle">hdr</text>
+                        <rect class="cell-acc" x="176" y="144" width="48" height="32"/>
+                        <text class="code" x="200.0" y="164" text-anchor="middle">C · 24</text>
+                        <rect class="cell-gap" x="224" y="144" width="16" height="32"/>
+                        <text class="note" x="232.0" y="164" text-anchor="middle">8</text>
+                        <rect class="cell-hdr" x="240" y="144" width="40" height="32"/>
+                        <text class="hdr-text" x="260.0" y="164" text-anchor="middle">hdr</text>
+                        <rect class="cell" x="280" y="144" width="96" height="32"/>
+                        <text class="code" x="328.0" y="164" text-anchor="middle">B · 64</text>
+                        <rect class="cell-gap" x="376" y="144" width="272" height="32"/>
+                        <text class="note" x="512.0" y="164" text-anchor="middle">3936 libre</text>
+                        <path class="link" d="M156 144 C156 132 260 132 260 142"/>
+                        <text class="note" x="136" y="208">header_t { libre · size · octet_libre · next } = 32 B</text>
+                    </svg>
+                    <figcaption>Le premier appel mappe une page. Le bloc suivant est découpé dans les octets libres après le précédent, et un bloc libéré est réutilisé sur place, le reste allant dans octet_libre</figcaption>
+                </figure>
+
                 <p class="block-label">Objectifs</p>
                 <ul>
                     <li>Réimplémenter malloc, free, calloc et realloc en C, sans dépendre de la libc.</li>
@@ -277,6 +408,37 @@
                 </div>
                 <small>Shell Unix maison, écrit en C</small>
 
+                <figure class="project-fig">
+                    <svg class="fig" viewBox="0 0 664 208" role="img" aria-label="Mini-shell exécutant le pipeline ls -l | grep .c | wc -l">
+                        <rect class="cell" x="16" y="16" width="632" height="36" rx="6"/>
+                        <text class="code" x="32" y="39">minishell (père)</text>
+                        <text class="note" x="632" y="39" text-anchor="end">sigsuspend() jusqu'au SIGCHLD</text>
+                        <line class="fork" x1="100" y1="52" x2="100" y2="100"/>
+                        <rect class="cell" x="16" y="100" width="168" height="44" rx="6"/>
+                        <text class="code" x="100" y="127" text-anchor="middle">ls -l</text>
+                        <text class="note" x="100" y="164" text-anchor="middle">execvp</text>
+                        <line class="fork" x1="332" y1="52" x2="332" y2="100"/>
+                        <rect class="cell" x="248" y="100" width="168" height="44" rx="6"/>
+                        <text class="code" x="332" y="127" text-anchor="middle">grep .c</text>
+                        <text class="note" x="332" y="164" text-anchor="middle">execvp</text>
+                        <line class="fork" x1="564" y1="52" x2="564" y2="100"/>
+                        <rect class="cell" x="480" y="100" width="168" height="44" rx="6"/>
+                        <text class="code" x="564" y="127" text-anchor="middle">wc -l</text>
+                        <text class="note" x="564" y="164" text-anchor="middle">execvp</text>
+                        <text class="note" x="108" y="80">fork()</text>
+                        <line class="arrow" x1="188" y1="122" x2="240" y2="122"/><path class="arrow-head" d="M246 122 l-7 -4 v8 z"/>
+                        <text class="note acc" x="216" y="112" text-anchor="middle">pipe</text>
+                        <text class="note" x="216" y="140" text-anchor="middle">1 → 0</text>
+                        <line class="arrow" x1="420" y1="122" x2="472" y2="122"/><path class="arrow-head" d="M478 122 l-7 -4 v8 z"/>
+                        <text class="note acc" x="448" y="112" text-anchor="middle">pipe</text>
+                        <text class="note" x="448" y="140" text-anchor="middle">1 → 0</text>
+                        <path class="link-acc" d="M648 122 C660 122 660 46 652 40"/>
+                        <text class="note acc" x="560" y="80" text-anchor="middle">SIGCHLD</text>
+                        <text class="note" x="16" y="196">handler: waitpid(-1, …, WNOHANG) · dup2(fd_in, 0) · dup2(tube[1], 1)</text>
+                    </svg>
+                    <figcaption>Pour chaque commande : pipe(), fork(), le fils redirige ses extrémités avec dup2() puis fait execvp(). Le père garde l'extrémité de lecture pour la commande suivante et attend avec sigsuspend() pendant qu'un handler SIGCHLD récupère les fils</figcaption>
+                </figure>
+
                 <p class="block-label">Objectifs</p>
                 <ul>
                     <li>Écrire un shell Unix de zéro en C, à partir d'un analyseur de ligne de commande fourni.</li>
@@ -298,6 +460,63 @@
                     <span class="status-badge status-done">Terminé</span>
                 </div>
                 <small>TIPE 2025 · Réseau de neurones maison développé avec CUDA</small>
+
+                <figure class="project-fig">
+                    <svg class="fig" viewBox="0 0 664 220" role="img" aria-label="Perceptron 784 vers 800 vers 10 classant un 7 manuscrit">
+                        <rect class="cell" x="16" y="40" width="112" height="112"/>
+                        <g class="px"><rect x="44" y="64" width="4" height="4"/><rect x="48" y="64" width="4" height="4"/><rect x="52" y="64" width="4" height="4"/><rect x="56" y="64" width="4" height="4"/><rect x="60" y="64" width="4" height="4"/><rect x="64" y="64" width="4" height="4"/><rect x="68" y="64" width="4" height="4"/><rect x="72" y="64" width="4" height="4"/><rect x="76" y="64" width="4" height="4"/><rect x="80" y="64" width="4" height="4"/><rect x="84" y="64" width="4" height="4"/><rect x="88" y="64" width="4" height="4"/><rect x="92" y="64" width="4" height="4"/><rect x="96" y="64" width="4" height="4"/><rect x="100" y="64" width="4" height="4"/><rect x="44" y="68" width="4" height="4"/><rect x="48" y="68" width="4" height="4"/><rect x="52" y="68" width="4" height="4"/><rect x="56" y="68" width="4" height="4"/><rect x="60" y="68" width="4" height="4"/><rect x="64" y="68" width="4" height="4"/><rect x="68" y="68" width="4" height="4"/><rect x="72" y="68" width="4" height="4"/><rect x="76" y="68" width="4" height="4"/><rect x="80" y="68" width="4" height="4"/><rect x="84" y="68" width="4" height="4"/><rect x="88" y="68" width="4" height="4"/><rect x="92" y="68" width="4" height="4"/><rect x="96" y="68" width="4" height="4"/><rect x="100" y="68" width="4" height="4"/><rect x="44" y="72" width="4" height="4"/><rect x="48" y="72" width="4" height="4"/><rect x="52" y="72" width="4" height="4"/><rect x="56" y="72" width="4" height="4"/><rect x="60" y="72" width="4" height="4"/><rect x="64" y="72" width="4" height="4"/><rect x="68" y="72" width="4" height="4"/><rect x="72" y="72" width="4" height="4"/><rect x="76" y="72" width="4" height="4"/><rect x="80" y="72" width="4" height="4"/><rect x="84" y="72" width="4" height="4"/><rect x="88" y="72" width="4" height="4"/><rect x="92" y="72" width="4" height="4"/><rect x="96" y="72" width="4" height="4"/><rect x="100" y="72" width="4" height="4"/><rect x="92" y="76" width="4" height="4"/><rect x="96" y="76" width="4" height="4"/><rect x="100" y="76" width="4" height="4"/><rect x="92" y="80" width="4" height="4"/><rect x="96" y="80" width="4" height="4"/><rect x="100" y="80" width="4" height="4"/><rect x="88" y="84" width="4" height="4"/><rect x="92" y="84" width="4" height="4"/><rect x="96" y="84" width="4" height="4"/><rect x="88" y="88" width="4" height="4"/><rect x="92" y="88" width="4" height="4"/><rect x="96" y="88" width="4" height="4"/><rect x="84" y="92" width="4" height="4"/><rect x="88" y="92" width="4" height="4"/><rect x="92" y="92" width="4" height="4"/><rect x="80" y="96" width="4" height="4"/><rect x="84" y="96" width="4" height="4"/><rect x="88" y="96" width="4" height="4"/><rect x="80" y="100" width="4" height="4"/><rect x="84" y="100" width="4" height="4"/><rect x="88" y="100" width="4" height="4"/><rect x="76" y="104" width="4" height="4"/><rect x="80" y="104" width="4" height="4"/><rect x="84" y="104" width="4" height="4"/><rect x="76" y="108" width="4" height="4"/><rect x="80" y="108" width="4" height="4"/><rect x="84" y="108" width="4" height="4"/><rect x="72" y="112" width="4" height="4"/><rect x="76" y="112" width="4" height="4"/><rect x="80" y="112" width="4" height="4"/><rect x="68" y="116" width="4" height="4"/><rect x="72" y="116" width="4" height="4"/><rect x="76" y="116" width="4" height="4"/><rect x="68" y="120" width="4" height="4"/><rect x="72" y="120" width="4" height="4"/><rect x="76" y="120" width="4" height="4"/><rect x="64" y="124" width="4" height="4"/><rect x="68" y="124" width="4" height="4"/><rect x="72" y="124" width="4" height="4"/><rect x="64" y="128" width="4" height="4"/><rect x="68" y="128" width="4" height="4"/><rect x="72" y="128" width="4" height="4"/><rect x="60" y="132" width="4" height="4"/><rect x="64" y="132" width="4" height="4"/><rect x="68" y="132" width="4" height="4"/><rect x="56" y="136" width="4" height="4"/><rect x="60" y="136" width="4" height="4"/><rect x="64" y="136" width="4" height="4"/></g>
+                        <text class="note" x="72" y="172" text-anchor="middle">28 × 28</text>
+                        <line class="arrow" x1="136" y1="96" x2="170" y2="96"/><path class="arrow-head" d="M176 96 l-7 -4 v8 z"/>
+                        <g class="edge"><line x1="200" y1="40" x2="340" y2="32"/><line x1="200" y1="40" x2="340" y2="56"/><line x1="200" y1="40" x2="340" y2="80"/><line x1="200" y1="40" x2="340" y2="136"/><line x1="200" y1="40" x2="340" y2="160"/><line x1="200" y1="40" x2="340" y2="184"/><line x1="200" y1="64" x2="340" y2="32"/><line x1="200" y1="64" x2="340" y2="56"/><line x1="200" y1="64" x2="340" y2="80"/><line x1="200" y1="64" x2="340" y2="136"/><line x1="200" y1="64" x2="340" y2="160"/><line x1="200" y1="64" x2="340" y2="184"/><line x1="200" y1="88" x2="340" y2="32"/><line x1="200" y1="88" x2="340" y2="56"/><line x1="200" y1="88" x2="340" y2="80"/><line x1="200" y1="88" x2="340" y2="136"/><line x1="200" y1="88" x2="340" y2="160"/><line x1="200" y1="88" x2="340" y2="184"/><line x1="200" y1="136" x2="340" y2="32"/><line x1="200" y1="136" x2="340" y2="56"/><line x1="200" y1="136" x2="340" y2="80"/><line x1="200" y1="136" x2="340" y2="136"/><line x1="200" y1="136" x2="340" y2="160"/><line x1="200" y1="136" x2="340" y2="184"/><line x1="200" y1="160" x2="340" y2="32"/><line x1="200" y1="160" x2="340" y2="56"/><line x1="200" y1="160" x2="340" y2="80"/><line x1="200" y1="160" x2="340" y2="136"/><line x1="200" y1="160" x2="340" y2="160"/><line x1="200" y1="160" x2="340" y2="184"/><line x1="340" y1="32" x2="480" y2="28"/><line x1="340" y1="32" x2="480" y2="46"/><line x1="340" y1="32" x2="480" y2="64"/><line x1="340" y1="32" x2="480" y2="82"/><line x1="340" y1="32" x2="480" y2="100"/><line x1="340" y1="32" x2="480" y2="118"/><line x1="340" y1="32" x2="480" y2="136"/><line x1="340" y1="32" x2="480" y2="154"/><line x1="340" y1="32" x2="480" y2="172"/><line x1="340" y1="32" x2="480" y2="190"/><line x1="340" y1="56" x2="480" y2="28"/><line x1="340" y1="56" x2="480" y2="46"/><line x1="340" y1="56" x2="480" y2="64"/><line x1="340" y1="56" x2="480" y2="82"/><line x1="340" y1="56" x2="480" y2="100"/><line x1="340" y1="56" x2="480" y2="118"/><line x1="340" y1="56" x2="480" y2="136"/><line x1="340" y1="56" x2="480" y2="154"/><line x1="340" y1="56" x2="480" y2="172"/><line x1="340" y1="56" x2="480" y2="190"/><line x1="340" y1="80" x2="480" y2="28"/><line x1="340" y1="80" x2="480" y2="46"/><line x1="340" y1="80" x2="480" y2="64"/><line x1="340" y1="80" x2="480" y2="82"/><line x1="340" y1="80" x2="480" y2="100"/><line x1="340" y1="80" x2="480" y2="118"/><line x1="340" y1="80" x2="480" y2="136"/><line x1="340" y1="80" x2="480" y2="154"/><line x1="340" y1="80" x2="480" y2="172"/><line x1="340" y1="80" x2="480" y2="190"/><line x1="340" y1="136" x2="480" y2="28"/><line x1="340" y1="136" x2="480" y2="46"/><line x1="340" y1="136" x2="480" y2="64"/><line x1="340" y1="136" x2="480" y2="82"/><line x1="340" y1="136" x2="480" y2="100"/><line x1="340" y1="136" x2="480" y2="118"/><line x1="340" y1="136" x2="480" y2="136"/><line x1="340" y1="136" x2="480" y2="154"/><line x1="340" y1="136" x2="480" y2="172"/><line x1="340" y1="136" x2="480" y2="190"/><line x1="340" y1="160" x2="480" y2="28"/><line x1="340" y1="160" x2="480" y2="46"/><line x1="340" y1="160" x2="480" y2="64"/><line x1="340" y1="160" x2="480" y2="82"/><line x1="340" y1="160" x2="480" y2="100"/><line x1="340" y1="160" x2="480" y2="118"/><line x1="340" y1="160" x2="480" y2="136"/><line x1="340" y1="160" x2="480" y2="154"/><line x1="340" y1="160" x2="480" y2="172"/><line x1="340" y1="160" x2="480" y2="190"/><line x1="340" y1="184" x2="480" y2="28"/><line x1="340" y1="184" x2="480" y2="46"/><line x1="340" y1="184" x2="480" y2="64"/><line x1="340" y1="184" x2="480" y2="82"/><line x1="340" y1="184" x2="480" y2="100"/><line x1="340" y1="184" x2="480" y2="118"/><line x1="340" y1="184" x2="480" y2="136"/><line x1="340" y1="184" x2="480" y2="154"/><line x1="340" y1="184" x2="480" y2="172"/><line x1="340" y1="184" x2="480" y2="190"/></g>
+                        <circle class="node" cx="200" cy="40" r="6"/>
+                        <circle class="node" cx="200" cy="64" r="6"/>
+                        <circle class="node" cx="200" cy="88" r="6"/>
+                        <circle class="node" cx="200" cy="136" r="6"/>
+                        <circle class="node" cx="200" cy="160" r="6"/>
+                        <circle class="node" cx="340" cy="32" r="6"/>
+                        <circle class="node" cx="340" cy="56" r="6"/>
+                        <circle class="node" cx="340" cy="80" r="6"/>
+                        <circle class="node" cx="340" cy="136" r="6"/>
+                        <circle class="node" cx="340" cy="160" r="6"/>
+                        <circle class="node" cx="340" cy="184" r="6"/>
+                        <text class="note" x="200" y="116" text-anchor="middle">⋮</text>
+                        <text class="note" x="340" y="116" text-anchor="middle">⋮</text>
+                        <circle class="node" cx="480" cy="28" r="5"/>
+                        <text class="note" x="496" y="32">0</text>
+                        <rect class="bar" x="512" y="24" width="3" height="8" rx="1"/>
+                        <circle class="node" cx="480" cy="46" r="5"/>
+                        <text class="note" x="496" y="50">1</text>
+                        <rect class="bar" x="512" y="42" width="2" height="8" rx="1"/>
+                        <circle class="node" cx="480" cy="64" r="5"/>
+                        <text class="note" x="496" y="68">2</text>
+                        <rect class="bar" x="512" y="60" width="5" height="8" rx="1"/>
+                        <circle class="node" cx="480" cy="82" r="5"/>
+                        <text class="note" x="496" y="86">3</text>
+                        <rect class="bar" x="512" y="78" width="4" height="8" rx="1"/>
+                        <circle class="node" cx="480" cy="100" r="5"/>
+                        <text class="note" x="496" y="104">4</text>
+                        <rect class="bar" x="512" y="96" width="2" height="8" rx="1"/>
+                        <circle class="node" cx="480" cy="118" r="5"/>
+                        <text class="note" x="496" y="122">5</text>
+                        <rect class="bar" x="512" y="114" width="3" height="8" rx="1"/>
+                        <circle class="node" cx="480" cy="136" r="5"/>
+                        <text class="note" x="496" y="140">6</text>
+                        <rect class="bar" x="512" y="132" width="2" height="8" rx="1"/>
+                        <circle class="node-acc" cx="480" cy="154" r="5"/>
+                        <text class="sig acc" x="496" y="158">7</text>
+                        <rect class="bar-acc" x="512" y="150" width="124" height="8" rx="1"/>
+                        <circle class="node" cx="480" cy="172" r="5"/>
+                        <text class="note" x="496" y="176">8</text>
+                        <rect class="bar" x="512" y="168" width="7" height="8" rx="1"/>
+                        <circle class="node" cx="480" cy="190" r="5"/>
+                        <text class="note" x="496" y="194">9</text>
+                        <rect class="bar" x="512" y="186" width="4" height="8" rx="1"/>
+                        <text class="sig" x="200" y="208" text-anchor="middle">784</text>
+                        <text class="sig" x="340" y="208" text-anchor="middle">800 · sigmoid</text>
+                        <text class="sig" x="480" y="212" text-anchor="middle">10</text>
+                    </svg>
+                    <figcaption>Perceptron 784 → 800 → 10, activations sigmoïdes, entraîné avec Adam. Chaque produit matriciel et chaque activation est un kernel CUDA. Scores de sortie illustratifs</figcaption>
+                </figure>
 
                 <div class="stat-row">
                     <div class="stat"><b>96 %</b><span>de précision sur MNIST</span></div>
